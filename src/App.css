@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+  background-color: rgb(197, 192, 192);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+input{
+  border-radius: 8px;
+}
