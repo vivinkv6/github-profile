@@ -17,7 +17,6 @@ function App() {
           await axios.get(`https://api.github.com/users/${user}`)
         ).data;
         setUserDetails(query);
-        console.log(query);
       } catch (err) {
        
         console.log(err);
