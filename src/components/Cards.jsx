@@ -3,7 +3,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 function Cards({userDetails}) {
   return (
-    <Card style={{ width: '18rem',marginTop:"30px",color:'white' }} className="bg bg-dark">
+    <Card style={{ width: '18rem',marginTop:"100px",color:'white' }} className="bg bg-dark">
       <Card.Img variant="top" src={userDetails.avatar_url}  style={{borderRadius:'50%',padding:'10px'}}/>
       <Card.Body>
         <Card.Title>{userDetails.name}</Card.Title>

@@ -13,12 +13,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const query = await (
-          await axios.get(`https://api.github.com/users/${user}`)
-        ).data;
+        const query = await (await axios.get(`https://api.github.com/users/${user}`)).data;
         setUserDetails(query);
       } catch (err) {
-       
         console.log(err);
       }
     };
@@ -33,7 +30,12 @@ function App() {
         userDetails={userDetails}
         setUserDetails={setUserDetails}
       />
-      <Cards userDetails={userDetails} />
+      {user.length<=0   ?
+      
+       <h1 align="center" style={{marginTop:'50px'}}>No Github user</h1>
+       :
+       <Cards userDetails={userDetails} />
+      }
     </div>
   );
 }
